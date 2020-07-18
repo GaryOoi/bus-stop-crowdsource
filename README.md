@@ -39,30 +39,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Steps
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. 'npm install'.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. 'npm run start' to start the project.
 
-### Code Splitting
+3. 'npm run test' to test project.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Data
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Data is read from ### `data.json from ./src`
