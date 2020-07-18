@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<nav
+  class="navbar navbar-expand navbar-dark bg-dark"
+>
+  <div
+    class="d-flex p-2 container"
+  >
+    <a
+      class="sc-AxirZ eEZWlz"
+      href="/"
+    >
+      <h1
+        class="sc-AxjAm iLGRWW"
+        href="#home"
+      >
+        Bus Stop Crowdsource
+      </h1>
+    </a>
+  </div>
+</nav>
+`;

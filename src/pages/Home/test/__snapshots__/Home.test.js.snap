@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div
+  class="sc-AxhUy eoRDWV"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="sc-AxgMl chuQjx mb-5"
+    >
+      All Bus Stops
+    </h2>
+    <div
+      class="mb-4 card"
+    >
+      <div
+        class="sc-AxjAm DJJLR d-flex align-items-center card-body"
+      >
+        <div>
+          <h5
+            class="mb-3"
+          >
+            xyz
+          </h5>
+          <div
+            class="sc-AxirZ lfktq"
+          >
+            Funding Target: $
+            700
+          </div>
+          <div
+            class="sc-AxiKw eixFbw"
+          >
+            0.86
+            % funded
+          </div>
+        </div>
+        <button
+          class="sc-AxhCb igDhVv btn btn-primary"
+          type="button"
+        >
+          Donate Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

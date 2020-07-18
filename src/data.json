@@ -1,0 +1,92 @@
+{
+  "busstops": [
+    {
+      "id": 1,
+      "name": "Ang Mo Kio Bus Interchange",
+      "currentAmount": 465,
+      "totalAmount": 700
+    },
+    {
+      "id": 2,
+      "name": "Bedok Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 3,
+      "name": "Bishan Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 4,
+      "name": "Boon Lay Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 5,
+      "name": "Bukit Batok Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 6,
+      "name": "Bukit Merah Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 7,
+      "name": "Bukit Panjang Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 8,
+      "name": "Choa Chu Kang Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 9,
+      "name": "Clementi Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 10,
+      "name": "Compassvale Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 11,
+      "name": "Eunos Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 12,
+      "name": "HarbourFront Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    },
+    {
+      "id": 13,
+      "name": "Joo Koon Bus Interchange",
+      "currentAmount": 0,
+      "totalAmount": 700
+    }
+  ],
+  "donations": [
+    {
+      "id": 1,
+      "name": "ali",
+      "email": "ali@yahoo.com",
+      "amount": 50,
+      "busstopId": 1,
+      "createdAt": "2020-07-12T14:55:31.173+00:00"
+    }
+  ]
+}
