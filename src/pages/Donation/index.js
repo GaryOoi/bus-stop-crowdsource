@@ -103,7 +103,9 @@ function Donation({ match }) {
   const percentage = parseFloat(
     (busStop.currentAmount / busStop.totalAmount) * 100
   ).toFixed(2);
-  const leftAmount = busStop.totalAmount - busStop.currentAmount;
+  const leftAmount = parseFloat(
+    busStop.totalAmount - busStop.currentAmount
+  ).toFixed(2);
   const dispatch = useDispatch();
   const donations = useSelector(getDonations(match.params.busstopid));
   const donationsLoading = useSelector(getDonationsLoading);
@@ -153,8 +155,9 @@ function Donation({ match }) {
         busStopId: Number(match.params.busstopid),
         createdAt: new Date(),
       };
-      const total =
-        Number(dataToSubmit.values.amount) + Number(busStop.currentAmount);
+      const total = parseFloat(
+        Number(dataToSubmit.values.amount) + Number(busStop.currentAmount)
+      ).toFixed(2);
       dispatch(addDonationSuccess(editedValues));
       dispatch(addBusStopCurrentAmountSuccess(match.params.busstopid, total));
     } catch (error) {

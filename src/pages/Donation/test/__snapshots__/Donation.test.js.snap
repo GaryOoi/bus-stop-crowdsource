@@ -1,5 +1,222 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test donation page 1`] = `
+<div
+  class="sc-AxhCb gCfWfU"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="sc-AxhUy fzfMcb mb-5"
+    >
+      xyz
+    </h2>
+    <div
+      class="row"
+    >
+      <div
+        class="col-lg-7"
+      >
+        <div
+          class="mb-4"
+        >
+          <div
+            class="sc-AxgMl fVmbZT mb-3"
+          />
+          <h3
+            class="sc-AxheI sc-Axmtr kIipBh"
+          >
+            $
+            6
+          </h3>
+          <div
+            class="sc-AxmLO QBcTe mb-2"
+          >
+            pledged of $
+            700
+             goal
+          </div>
+          <div
+            class="sc-fzozJi cJMJbw progress"
+          >
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow="0.86"
+              class="progress-bar"
+              role="progressbar"
+              style="width: 0.86%;"
+            >
+              0.86%
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col"
+          >
+            <h3
+              class="sc-AxheI icydrP"
+            >
+              $
+              694.00
+            </h3>
+            <div
+              class="sc-AxmLO QBcTe"
+            >
+              More to go
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="mb-5"
+            >
+              <h3
+                class="sc-AxheI icydrP"
+              >
+                1
+              </h3>
+              <div
+                class="sc-AxmLO QBcTe"
+              >
+                Backers
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4
+          class="mb-4"
+        >
+          History
+        </h4>
+        <div
+          class="sc-fznyAO dxLNYP"
+        >
+          <div
+            class="sc-AxjAm fUWBhh mb-4"
+          >
+            <img
+              class="sc-AxirZ sYfwZ mr-3 rounded"
+              src="user.svg"
+            />
+            <div
+              class="sc-AxiKw eBvrQH"
+            >
+              <strong>
+                ali
+              </strong>
+               donated $
+              50
+               on 
+              July 12, 2020
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-5"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <h4
+              class="sc-fznKkj KRuEy font-weight-bold mb-4"
+            >
+              Fund this bus stop
+            </h4>
+            <form
+              class=""
+              novalidate=""
+            >
+              <div
+                class="form-group"
+              >
+                <label
+                  class="form-label"
+                >
+                  Name*
+                </label>
+                <input
+                  class="form-control"
+                  name="name"
+                  placeholder="Enter your name"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="invalid-feedback"
+                />
+              </div>
+              <div
+                class="form-group"
+              >
+                <label
+                  class="form-label"
+                  for="formBasicEmail"
+                >
+                  Email address
+                </label>
+                <input
+                  class="form-control"
+                  id="formBasicEmail"
+                  name="email"
+                  placeholder="Enter your email"
+                  type="email"
+                  value=""
+                />
+                <small
+                  class="text-muted form-text"
+                >
+                  We'll never share your email with anyone else.
+                </small>
+                <div
+                  class="invalid-feedback"
+                />
+              </div>
+              <div
+                class="mb-5 form-group"
+              >
+                <label
+                  class="form-label"
+                  for="formBasicEmail"
+                >
+                  Fund Amount*
+                </label>
+                <input
+                  class="form-control"
+                  id="formBasicEmail"
+                  name="amount"
+                  placeholder="Enter amount"
+                  type="string"
+                  value=""
+                />
+                <div
+                  class="invalid-feedback"
+                />
+              </div>
+              <button
+                class="sc-fznZeY jLpRNd btn btn-primary btn-block btn-lg"
+                type="submit"
+              >
+                Fund Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`renders learn react link 1`] = `
 <div
   class="sc-AxhCb gCfWfU"
@@ -62,7 +279,7 @@ exports[`renders learn react link 1`] = `
               class="sc-AxheI icydrP"
             >
               $
-              694
+              694.00
             </h3>
             <div
               class="sc-AxmLO QBcTe"

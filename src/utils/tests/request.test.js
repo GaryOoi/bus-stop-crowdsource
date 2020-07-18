@@ -1,4 +1,3 @@
-import React from "react";
 import { getData, addDonation } from "../request";
 
 test("test addDonation function", async () => {

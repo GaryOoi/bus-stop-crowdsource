@@ -6,7 +6,7 @@ import configureStore from "redux-mock-store";
 
 import Home from "../index";
 
-test("renders learn react link", () => {
+test("Test home page", () => {
   const mockStore = configureStore([]);
   const store = mockStore({
     busStop: {
