@@ -9,10 +9,10 @@ import Home from "../index";
 test("renders learn react link", () => {
   const mockStore = configureStore([]);
   const store = mockStore({
-    busstop: {
+    busStop: {
       isLoading: false,
       error: "",
-      busstops: [
+      busStops: [
         {
           id: 1,
           name: "xyz",

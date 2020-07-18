@@ -10,7 +10,7 @@ import {
   DonateButton,
 } from "./styles";
 
-function BusCard({ busstop: { id, name, currentAmount, totalAmount } }) {
+function BusCard({ busStop: { id, name, currentAmount, totalAmount } }) {
   const history = useHistory();
 
   const handlePressDonate = () => {
@@ -36,7 +36,7 @@ function BusCard({ busstop: { id, name, currentAmount, totalAmount } }) {
 }
 
 BusCard.propTypes = {
-  busstop: PropTypes.object.isRequired,
+  busStop: PropTypes.object.isRequired,
 };
 
 export default BusCard;

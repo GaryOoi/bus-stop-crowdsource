@@ -1,27 +1,27 @@
-export const addBusstopCurrentAmountRequest = () => ({
+export const addBusStopCurrentAmountRequest = () => ({
   type: "ADD_BUS_STOP_CURRENT_AMOUNT_REQUEST",
 });
 
-export const addBusstopCurrentAmountSuccess = (id, amount) => ({
+export const addBusStopCurrentAmountSuccess = (id, amount) => ({
   type: "ADD_BUS_STOP_CURRENT_AMOUNT_SUCCESS",
   id,
   amount,
 });
 
-export const addBusstopCurrentAmountFail = () => ({
+export const addBusStopCurrentAmountFail = () => ({
   type: "ADD_BUS_STOP_CURRENT_AMOUNT_FAIL",
 });
 
-export const getBusstopsRequest = () => ({
+export const getBusStopsRequest = () => ({
   type: "GET_BUS_STOPS_REQUEST",
 });
 
-export const getBusstopsSuccess = (busstops) => ({
+export const getBusStopsSuccess = (busStops) => ({
   type: "GET_BUS_STOPS_SUCCESS",
-  busstops,
+  busStops,
 });
 
-export const getBusstopsFail = (error) => ({
+export const getBusStopsFail = (error) => ({
   type: "GET_BUS_STOPS_FAIL",
   error,
 });

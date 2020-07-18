@@ -14,10 +14,10 @@ import {
 } from "react-bootstrap";
 
 import {
-  addBusstopCurrentAmountRequest,
-  addBusstopCurrentAmountSuccess,
-  addBusstopCurrentAmountFail,
-} from "actions/busstopActions";
+  addBusStopCurrentAmountRequest,
+  addBusStopCurrentAmountSuccess,
+  addBusStopCurrentAmountFail,
+} from "actions/busStopActions";
 import {
   getDonationsRequest,
   getDonationsSuccess,
@@ -31,7 +31,7 @@ import {
   getDonationsLoading,
   getDonationsError,
 } from "selectors/donationSelectors";
-import { getSpecificBusstop } from "selectors/busstopSelectors";
+import { getSpecificBusStop } from "selectors/busStopSelectors";
 
 import { MONTHS, YEARS } from "globals/constant";
 import MessageModal from "components/MessageModal";
@@ -99,7 +99,7 @@ const bankInfoSchema = yup.object({
 });
 
 function Donation({ match }) {
-  const busStop = useSelector(getSpecificBusstop(match.params.busstopid));
+  const busStop = useSelector(getSpecificBusStop(match.params.busstopid));
   const percentage = parseFloat(
     (busStop.currentAmount / busStop.totalAmount) * 100
   ).toFixed(2);
@@ -141,7 +141,7 @@ function Donation({ match }) {
   const handleBankInfoModalSubmit = async (values) => {
     try {
       dispatch(addDonationRequest());
-      dispatch(addBusstopCurrentAmountRequest());
+      dispatch(addBusStopCurrentAmountRequest());
       // Process bank card
       await addDonation({ ...values, ...dataToSubmit.values });
       // Add donation
@@ -150,16 +150,16 @@ function Donation({ match }) {
         name: dataToSubmit.values.name,
         email: dataToSubmit.values.email,
         amount: dataToSubmit.values.amount,
-        busstopId: Number(match.params.busstopid),
+        busStopId: Number(match.params.busstopid),
         createdAt: new Date(),
       };
       const total =
         Number(dataToSubmit.values.amount) + Number(busStop.currentAmount);
       dispatch(addDonationSuccess(editedValues));
-      dispatch(addBusstopCurrentAmountSuccess(match.params.busstopid, total));
+      dispatch(addBusStopCurrentAmountSuccess(match.params.busstopid, total));
     } catch (error) {
       dispatch(addDonationFail());
-      dispatch(addBusstopCurrentAmountFail());
+      dispatch(addBusStopCurrentAmountFail());
       setModelData({
         visibility: true,
         message: error,

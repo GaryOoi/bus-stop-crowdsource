@@ -9,8 +9,8 @@ import Donation from "../index";
 test("renders learn react link", () => {
   const mockStore = configureStore([]);
   const store = mockStore({
-    busstop: {
-      busstops: [
+    busStop: {
+      busStops: [
         {
           id: 1,
           name: "xyz",
@@ -28,7 +28,7 @@ test("renders learn react link", () => {
           name: "ali",
           email: "ali@yahoo.com",
           amount: 50,
-          busstopId: 1,
+          busStopId: 1,
           createdAt: "2020-07-12T14:55:31.173+00:00",
         },
       ],

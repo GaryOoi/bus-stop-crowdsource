@@ -1,6 +1,6 @@
-export const getDonations = (busstopId) => (state) =>
+export const getDonations = (busStopId) => (state) =>
   state.donation.donations.filter(
-    (donation) => donation.busstopId === Number(busstopId)
+    (donation) => donation.busStopId === Number(busStopId)
   );
 
 export const getDonationsLoading = (state) => state.donation.isLoading;

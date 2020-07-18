@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
 
-import busstopReducer from "reducers/busstopReducer";
+import busStopReducer from "reducers/busStopReducer";
 import donationReducer from "reducers/donationReducer";
 
 const createReducer = (injectedReducers = {}) => {
   const rootReducer = combineReducers({
-    busstop: busstopReducer,
+    busStop: busStopReducer,
     donation: donationReducer,
     ...injectedReducers,
   });

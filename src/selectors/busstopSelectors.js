@@ -1,8 +1,8 @@
-export const getBusstops = (state) => state.busstop.busstops;
+export const getBusStops = (state) => state.busStop.busStops;
 
-export const getBusstopsLoading = (state) => state.busstop.isLoading;
+export const getBusStopsLoading = (state) => state.busStop.isLoading;
 
-export const getBusstopsError = (state) => state.busstop.error;
+export const getBusStopsError = (state) => state.busStop.error;
 
-export const getSpecificBusstop = (id) => (state) =>
-  state.busstop.busstops.find((busstop) => busstop.id === Number(id));
+export const getSpecificBusStop = (id) => (state) =>
+  state.busStop.busStops.find((busStop) => busStop.id === Number(id));

@@ -47,4 +47,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### Data
 
-Data is read from ### `data.json from ./src`
+Data is read from `data.json from ./src`

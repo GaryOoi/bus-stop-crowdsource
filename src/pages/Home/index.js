@@ -3,15 +3,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { Container, Spinner } from "react-bootstrap";
 
 import {
-  getBusstopsRequest,
-  getBusstopsSuccess,
-  getBusstopsFail,
-} from "actions/busstopActions";
+  getBusStopsRequest,
+  getBusStopsSuccess,
+  getBusStopsFail,
+} from "actions/busStopActions";
 import {
-  getBusstops,
-  getBusstopsLoading,
-  getBusstopsError,
-} from "selectors/busstopSelectors";
+  getBusStops,
+  getBusStopsLoading,
+  getBusStopsError,
+} from "selectors/busStopSelectors";
 
 import MessageModal from "components/MessageModal";
 import { getData } from "utils/request";
@@ -20,9 +20,9 @@ import { Section, SectionHeader, SpinnerWrapper } from "./styles";
 
 function Home() {
   const dispatch = useDispatch();
-  const busStops = useSelector(getBusstops);
-  const busstopsLoading = useSelector(getBusstopsLoading);
-  const busstopsError = useSelector(getBusstopsError);
+  const busStops = useSelector(getBusStops);
+  const busStopsLoading = useSelector(getBusStopsLoading);
+  const busStopsError = useSelector(getBusStopsError);
   const [modelData, setModelData] = useState({
     visibility: false,
     message: "",
@@ -38,11 +38,11 @@ function Home() {
   useEffect(() => {
     const fetchAPI = async () => {
       try {
-        dispatch(getBusstopsRequest());
-        const result = await getData("busstops");
-        dispatch(getBusstopsSuccess(result));
+        dispatch(getBusStopsRequest());
+        const result = await getData("busStops");
+        dispatch(getBusStopsSuccess(result));
       } catch (err) {
-        dispatch(getBusstopsFail(err));
+        dispatch(getBusStopsFail(err));
         setModelData({
           visibility: true,
           message: err,
@@ -57,7 +57,7 @@ function Home() {
   return (
     <>
       <Section>
-        {busstopsLoading || busstopsError !== "" ? (
+        {busStopsLoading || busStopsError !== "" ? (
           <SpinnerWrapper>
             <Spinner animation="border" role="status">
               <span className="sr-only">Loading...</span>
@@ -66,8 +66,8 @@ function Home() {
         ) : (
           <Container>
             <SectionHeader className="mb-5">All Bus Stops</SectionHeader>
-            {busStops.map((busstop) => {
-              return <BusCard key={busstop.id} busstop={busstop} />;
+            {busStops.map((busStop) => {
+              return <BusCard key={busStop.id} busStop={busStop} />;
             })}
           </Container>
         )}

@@ -1,5 +1,5 @@
 {
-  "busstops": [
+  "busStops": [
     {
       "id": 1,
       "name": "Ang Mo Kio Bus Interchange",
@@ -85,7 +85,7 @@
       "name": "ali",
       "email": "ali@yahoo.com",
       "amount": 50,
-      "busstopId": 1,
+      "busStopId": 1,
       "createdAt": "2020-07-12T14:55:31.173+00:00"
     }
   ]
